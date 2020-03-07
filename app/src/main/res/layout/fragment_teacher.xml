@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.teacher.TeacherFragment">
+
+	<Button
+		android:id="@+id/teacher_addGradeButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="64dp"
+		android:layout_marginEnd="64dp"
+		android:layout_marginBottom="32dp"
+		android:text="@string/add_grades"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Spinner
+		android:id="@+id/teacher_studentsSpinner"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="64dp"
+		app:layout_constraintEnd_toEndOf="@+id/teacher_addGradeButton"
+		app:layout_constraintStart_toStartOf="@+id/teacher_addGradeButton"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Spinner
+		android:id="@+id/teacher_categorySpinner"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:entries="@array/categories"
+		app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+		app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:divider="@color/colorAccent"
+		android:dividerPadding="8dp"
+		android:gravity="center"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="@+id/teacher_studentsSpinner"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="@+id/teacher_studentsSpinner"
+		app:layout_constraintTop_toBottomOf="@+id/teacher_studentsSpinner">
+
+		<EditText
+			android:id="@+id/teacher_gradeEdit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="16dp"
+			android:layout_weight="0"
+			android:autofillHints="1,2,3,4,5"
+			android:ems="4"
+			android:hint="@string/grade"
+			android:inputType="numberSigned"
+			android:maxLength="4"
+			android:maxLines="1" />
+
+		<EditText
+			android:id="@+id/teacher_weightEdit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_weight="0"
+			android:autofillHints="@string/add_grades"
+			android:ems="4"
+			android:hint="@string/weight"
+			android:inputType="numberSigned"
+			android:maxLength="4"
+			android:maxLines="1" />
+	</LinearLayout>
+
+	<EditText
+		android:id="@+id/teacher_descriptionEdit"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:ems="10"
+		android:gravity="start|top"
+		android:hint="@string/description"
+		android:inputType="textMultiLine"
+		android:maxLength="300"
+		android:maxLines="10"
+		app:layout_constraintEnd_toEndOf="@+id/teacher_categorySpinner"
+		app:layout_constraintStart_toStartOf="@+id/teacher_categorySpinner"
+		app:layout_constraintTop_toBottomOf="@+id/teacher_categorySpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>

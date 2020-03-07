@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "690806186409",
+    "firebase_url": "https://crygrade.firebaseio.com",
+    "project_id": "crygrade",
+    "storage_bucket": "crygrade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690806186409:android:d8d5b1c05521211d8764b8",
+        "android_client_info": {
+          "package_name": "com.crygrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690806186409-qnt72leodemujn84350q1uro1aj4ih6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crygrade",
+            "certificate_hash": "6072eba04a8642556fcbe6e49673813461526119"
+          }
+        },
+        {
+          "client_id": "690806186409-chq3jio6kd5i825oplk3ueq0usi6tkdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx4Qsc8-uNHEzZ0tTW2vvdEHie6QYZzDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690806186409-chq3jio6kd5i825oplk3ueq0usi6tkdj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

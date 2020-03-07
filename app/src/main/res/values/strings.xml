@@ -1,0 +1,39 @@
+<resources>
+	<string name="app_name">CryGrade</string>
+	<string name="title_activity_main">MainActivity</string>
+	<string name="messages">Wiadomości</string>
+	<string name="lessons">Plan lekcji</string>
+	<string name="grades">Oceny</string>
+	<string name="home">Oś czasu</string>
+	<string name="dashboard">Biurko</string>
+	<string name="account">Konto</string>
+	<string name="add">Dodaj</string>
+	<string name="add_grades">Dodaj oceny</string>
+	<string name="sign_out">Wyloguj się</string>
+	<string name="add_user">Dodaj użytkownika</string>
+	<string name="email">Email</string>
+	<string name="password">Hasło</string>
+	<string name="users">Użytkownicy</string>
+	<string name="about_account">Informacje o koncie</string>
+	<string name="password_change">Zmiana hasło</string>
+	<string name="current_password">Obecne hasło</string>
+	<string name="new_password">Nowe hasło</string>
+	<string name="change_password">Zmień hasło</string>
+	<string name="weight">Waga</string>
+	<string name="grade">Ocena</string>
+	<string name="description">Opis</string>
+	<string name="firstName">Imię</string>
+	<string name="lastName">Nazwisko</string>
+	<string name="subject">Przedmiot</string>
+	<string name="class_">Klasa</string>
+	<string-array name="account_types">
+		<item>Uczeń</item>
+		<item>Nauczyciel</item>
+		<item>Administrator</item>
+	</string-array>
+	<string-array name="categories">
+		<item>Aktywność</item>
+		<item>Sprawdzian</item>
+		<item>Kartkówka</item>
+	</string-array>
+</resources>

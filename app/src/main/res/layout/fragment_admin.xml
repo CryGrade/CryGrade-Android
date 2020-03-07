@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.admin.AdminFragment">
+
+	<EditText
+		android:id="@+id/admin_lastNameEdit"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:ems="10"
+		android:hint="@string/lastName"
+		android:inputType="textPersonName"
+		app:layout_constraintEnd_toEndOf="@+id/admin_firstNameEdit"
+		app:layout_constraintStart_toStartOf="@+id/admin_firstNameEdit"
+		app:layout_constraintTop_toBottomOf="@+id/admin_firstNameEdit" />
+
+	<EditText
+		android:id="@+id/admin_firstNameEdit"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="64dp"
+		android:ems="10"
+		android:hint="@string/firstName"
+		android:inputType="textPersonName"
+		app:layout_constraintEnd_toEndOf="@+id/admin_confirmButton"
+		app:layout_constraintStart_toStartOf="@+id/admin_confirmButton"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<EditText
+		android:id="@+id/admin_emailEdit"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:layout_weight="5"
+		android:ems="10"
+		android:hint="@string/email"
+		android:inputType="textEmailAddress"
+		app:layout_constraintEnd_toEndOf="@+id/admin_lastNameEdit"
+		app:layout_constraintStart_toStartOf="@+id/admin_lastNameEdit"
+		app:layout_constraintTop_toBottomOf="@+id/admin_lastNameEdit" />
+
+	<EditText
+		android:id="@+id/admin_passwordEdit"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:layout_weight="5"
+		android:ems="10"
+		android:hint="@string/password"
+		android:inputType="textPassword"
+		app:layout_constraintEnd_toEndOf="@+id/admin_emailEdit"
+		app:layout_constraintStart_toStartOf="@+id/admin_emailEdit"
+		app:layout_constraintTop_toBottomOf="@+id/admin_emailEdit" />
+
+	<Spinner
+		android:id="@+id/admin_typeSpinner"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:entries="@array/account_types"
+		android:spinnerMode="dropdown"
+		app:layout_constraintBottom_toBottomOf="@+id/admin_classEdit"
+		app:layout_constraintEnd_toStartOf="@+id/admin_classEdit"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="@+id/admin_passwordEdit"
+		app:layout_constraintTop_toTopOf="@+id/admin_classEdit" />
+
+	<EditText
+		android:id="@+id/admin_classEdit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:ems="3"
+		android:hint="@string/class_"
+		android:inputType="textPersonName"
+		android:visibility="invisible"
+		app:layout_constraintEnd_toEndOf="@+id/admin_passwordEdit"
+		app:layout_constraintTop_toBottomOf="@+id/admin_passwordEdit" />
+
+	<Button
+		android:id="@+id/admin_confirmButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="64dp"
+		android:layout_marginEnd="64dp"
+		android:layout_marginBottom="32dp"
+		android:text="@string/add_user"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<EditText
+		android:id="@+id/admin_subjectEdit"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:ems="10"
+		android:hint="@string/subject"
+		android:inputType="textPersonName"
+		android:visibility="invisible"
+		app:layout_constraintEnd_toEndOf="@+id/admin_typeSpinner"
+		app:layout_constraintStart_toStartOf="@+id/admin_typeSpinner"
+		app:layout_constraintTop_toBottomOf="@+id/admin_classEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
